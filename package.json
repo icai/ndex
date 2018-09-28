@@ -1,5 +1,5 @@
 {
-  "name": "indexfile",
+  "name": "ndex",
   "version": "1.0.0",
   "description": "A small tool to index your directory files and generate index.html",
   "main": "index.js",
