@@ -1,0 +1,17 @@
+const commander = require('commander');
+const pkg   = require('../package.json');
+
+const ndex = require('../index');
+
+commander.version(pkg.version)
+  .option('-p, --path', 'path name')
+  .option('-n, --name', 'ext name')
+  .option('-i, --ignore match', 'ignore match')
+  .parse(process.argv);
+
+
+if (commander.path) console.log('  - peppers');
+if (commander.name) console.log('  - pineapple');
+if (commander.ignore) console.log('  - bbq');
+
+console.log(commander.name)
