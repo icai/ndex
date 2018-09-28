@@ -4,14 +4,12 @@ const pkg   = require('../package.json');
 const ndex = require('../index');
 
 commander.version(pkg.version)
-  .option('-p, --path', 'path name')
-  .option('-n, --name', 'ext name')
-  .option('-i, --ignore match', 'ignore match')
+  .option('-p, --path <path>', 'the path name of root directory')
+  .option('-n, --name [name]', 'ext name')
+  .option('-i, --ignore [igore]', 'ignore match')
   .parse(process.argv);
 
 
-if (commander.path) console.log('  - peppers');
-if (commander.name) console.log('  - pineapple');
-if (commander.ignore) console.log('  - bbq');
-
-console.log(commander.name)
+if (commander.path) console.log(commander.path);
+if (commander.name) console.log(commander.name);
+if (commander.ignore) console.log(commander.ignore);
