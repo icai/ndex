@@ -62,3 +62,5 @@ dist
 .tmp
 package-lock.json
 data
+
+test/index.html

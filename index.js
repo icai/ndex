@@ -40,7 +40,7 @@ const ndex = (path, ext = "*", ignore = false) => {
         try {
             TmplMed = require(tmplPath);
             if (typeof TmplMed !== 'function') {
-                TmplMed = TmplMed.default;
+                throw err;
             }
         } catch (err) {
             console.error('Attempted to load template function "' + tmplPath + '" but could not.');
@@ -66,6 +66,9 @@ ndex.config = (template) => {
     if (template) {
         tmplPath = template
     }
+}
+ndex.reset = () => {
+    tmplPath = './tmpl';
 }
 ndex.glob = glob;
 ndex.treeFromPaths = treeFromPaths;
