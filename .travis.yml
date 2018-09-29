@@ -1,0 +1,7 @@
+sudo: false
+language: node_js
+node_js: lts/*
+before_install:
+script:
+- npm test
+after_success:
