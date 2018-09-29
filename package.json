@@ -1,6 +1,6 @@
 {
   "name": "ndex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small tool to index your directory files and generate index.html",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,20 @@
   "bin": {
     "ndex": "./bin/ndex"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icai/ndex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/icai/ndex/issues"
+  },
+  "keywords": [
+    "ndex",
+    "tool",
+    "index.html",
+    "generate",
+    "directory"
+  ],
   "dependencies": {
     "commander": "^2.18.0",
     "glob": "^7.1.3",
