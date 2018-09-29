@@ -1,17 +1,21 @@
 #!/usr/bin/env node
 
 const commander = require('commander');
-const pkg   = require('../package.json');
+const pkg = require('../package.json');
 
 const ndex = require('../index');
 
 commander.version(pkg.version)
+  .usage('[options] <dir> | <dir> [options]')
   .option('-p, --path <path>', 'the path name of root directory')
-  .option('-n, --ext [name]', 'ext name')
-  .option('-i, --ignore [igore]', 'ignore match')
+  .option('-e, --ext [name]', 'which type of file you should list, given ext name')
+  .option('-i, --ignore [igore]', 'ignore match, pass to glob')
   .parse(process.argv);
 
-
-if (commander.path) console.log(commander.path);
-if (commander.ext) console.log(commander.ext);
-if (commander.ignore) console.log(commander.ignore);
+const path = commander.args[0] || commander.path
+if (path) {
+  ndex(path, commander.ext, commander.ignore)
+} else {
+  commander.outputHelp();
+  process.exit(1);
+}
