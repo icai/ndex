@@ -21,10 +21,10 @@ const writeFileSync = function (filepath, contents, options = {}) {
 /**
  * @name ndex
  * @param path the path of directory
- * @param name ext name of file
+ * @param ext ext name of file
  * @param ignore some ignore files
  */
-const ndex = (path, name = "*", ignore = false) => {
+const ndex = (path, ext = "*", ignore = false) => {
     let TmplMed;
     if (typeof tmplPath === 'string') {
         try {
@@ -48,7 +48,7 @@ const ndex = (path, name = "*", ignore = false) => {
             throw err;
         }
     }
-    let data = glob.sync('**/*.' + name, {
+    let data = glob.sync('**/*.' + ext, {
         cwd: rpath.resolve(process.cwd(), path),
         ignore
     });

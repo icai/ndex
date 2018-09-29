@@ -7,11 +7,11 @@ const ndex = require('../index');
 
 commander.version(pkg.version)
   .option('-p, --path <path>', 'the path name of root directory')
-  .option('-n, --name [name]', 'ext name')
+  .option('-n, --ext [name]', 'ext name')
   .option('-i, --ignore [igore]', 'ignore match')
   .parse(process.argv);
 
 
 if (commander.path) console.log(commander.path);
-if (commander.name) console.log(commander.name);
+if (commander.ext) console.log(commander.ext);
 if (commander.ignore) console.log(commander.ignore);
