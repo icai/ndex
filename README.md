@@ -57,12 +57,6 @@ const ndex: {
 
 ```
 
-## Demo
-
-[http://blog.w3cub.com/html5canvas/html5canvas/](http://blog.w3cub.com/html5canvas/html5canvas/)
-
-
-
 ### Custom Template
 
 ```js
@@ -73,6 +67,12 @@ ndex.config('the js file which return a function')
 ndex.reset()
 
 ```
+
+## Demo
+
+[http://blog.w3cub.com/html5canvas/html5canvas/](http://blog.w3cub.com/html5canvas/html5canvas/)
+
+
 
 
 ## License
