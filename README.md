@@ -15,6 +15,7 @@
 
 npm install ndex -g
 
+
 ```
 
 
@@ -56,12 +57,20 @@ const ndex: {
 
 ```
 
+## Demo
+
+[http://blog.w3cub.com/html5canvas/html5canvas/](http://blog.w3cub.com/html5canvas/html5canvas/)
+
+
 
 ### Custom Template
 
 ```js
 
 ndex.config('the js file which return a function')
+
+// reset to default template
+ndex.reset()
 
 ```
 
