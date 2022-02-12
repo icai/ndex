@@ -70,7 +70,7 @@ ndex.reset()
 
 ## Demo
 
-[http://blog.w3cub.com/html5canvas/html5canvas/](http://blog.w3cub.com/html5canvas/html5canvas/)
+[https://blog.w3cub.com/html5canvas/html5canvas/](https://blog.w3cub.com/html5canvas/html5canvas/)
 
 
 
